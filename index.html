@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icon.png" />
+
+    <title>ProjectFolio</title>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+
+  <body>
+    <!--
+    POner los links de los documentos como el pdf, el del figma, la presentacion, etc.
+    poster: poner un grafiquito, dibujito o algo, si no encuentro nada lindo poner la conclusion
+    -->
+
+    <div class="modal__screen-wrapper closed">
+      <div class="diagram__content">
+        <h3 class="diagram__content-title">Diagrama de la base de datos</h3>
+
+        <div class="diagram__content__img-container">
+          <img
+            class="diagram__content__img"
+            src="./assets/db-chart.svg"
+            alt=""
+          />
+        </div>
+        <div class="diagram__content__controls-container">
+          <input
+            class="diagram__content__controls__zoom-input"
+            type="range"
+            min="0"
+            max="100"
+          />
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__title-container">
+        <img class="header__title-container__icon" src="./images/icon.png" />
+        <h1 class="header__title-container__title">
+          <a href="#"> ProjectFolio </a>
+        </h1>
+      </div>
+      <nav class="header__nav">
+        <a class="header__nav__link" href="#">Inicio</a>
+        <div class="header__nav__resources-container">
+          <p class="header__nav__link">
+            Recursos
+            <svg
+              class="header__nav__link-caret"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              data-testid="ArrowDropDownIcon"
+            >
+              <path d="m7 10 5 5 5-5z"></path>
+            </svg>
+          </p>
+          <div class="header__nav__links">
+            <a
+              rel="noopen"
+              target="_blank"
+              class="header__nav__resource-link"
+              href="https://docs.google.com/document/d/1V02YJRzdiTQET3zcD65Q6z6CJlHLV1D13Ma2wzIOPj8/edit"
+            >
+              Pdf proyecto
+            </a>
+            <a
+              href="https://docs.google.com/document/d/1V02YJRzdiTQET3zcD65Q6z6CJlHLV1D13Ma2wzIOPj8/edit"
+              target="_blank"
+              class="header__nav__resource-link"
+              rel="noopener"
+            >
+              Presentación
+            </a>
+            <a
+              href="https://docs.google.com/document/d/1CYUreW55rt-xISKgepd9saI12KOl3Kv3plCNcKRbXbQ/edit"
+              target="_blank"
+              class="header__nav__resource-link"
+              rel="noopener"
+            >
+              Resumen
+            </a>
+          </div>
+        </div>
+        <a class="header__nav__link" href="#">Acerca de mi</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="main__diagram-container">
+        <div class="main__diagram-container__content">
+          <div class="main__diagram__text-container">
+            <h3 class="main__diagram__text-container__diagram-name">
+              Diagrama entidad-relacion
+            </h3>
+            <p class="main__diagram__text-container__diagram-description">
+              Este diagrama muestra la estructura de la base de datos, sus
+              tablas y la relación entre estas.
+            </p>
+          </div>
+          <div class="main__diagram__img-container">
+            <img
+              class="main__diagram__img-container__img"
+              src="./assets/db-chart.svg"
+              alt="Database diagram"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="main__diagram-container">
+        <div class="main__diagram-container__content">
+          <div class="main__diagram__img-container">
+            <img
+              class="main__diagram__img-container__img"
+              src="./assets/classes-chart.png"
+              alt="Database diagram"
+            />
+          </div>
+          <div class="main__diagram__text-container">
+            <h3 class="main__diagram__text-container__diagram-name">
+              Diagrama de clases
+            </h3>
+            <p class="main__diagram__text-container__diagram-description">
+              Diagrama enfocado a la programación orientada a objetos.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">Aplicación desarrollada por Juan Cruz Vila</p>
+      <h3 class="attribution">Materia: Práctica profesionalizante II</h3>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

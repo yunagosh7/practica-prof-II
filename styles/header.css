@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 24px 16px;
+  background-color: var(--primary-desaturated-blue);
+  height: var(--navbar-height);
+}
+.header * {
+  color: white;
+}
+
+.header__title-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__title-container__icon {
+  width: 42px;
+  height: 42px;
+}
+
+.header__title-container__title { 
+  font-size: 24px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 12px;
+}
+
+.header__nav {
+  height: 100%;
+  display: flex;
+  gap: 0;
+}
+
+.header__nav__link {
+  padding: 12px 20px;
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+}
+
+.header__nav__link:hover {
+  background-color: #0002;
+}
+
+.header__nav__link:hover svg {
+  rotate: 180deg;
+}
+
+.header__nav__resources-container {
+  height: fit-content !important;
+  position: relative;
+}
+
+
+.header__nav__resources-container:hover .header__nav__links,
+.header__nav__links:hover {
+  display: flex;
+}
+
+.header__nav__links {
+  display: none;
+  flex-direction: column;
+  background: #aaa;
+}
+
+.header__nav__resource-link {
+  padding: 8px 16px;
+}
+
+.header__nav__resource-link:hover {
+  background: #888;
+}
+
+.header__nav__link-caret {
+  width: 20px;
+  height: 20px;
+  fill: red !important;
+
+}
+.header__nav__link-caret path {
+  fill: white;
+  color: white;
+}
