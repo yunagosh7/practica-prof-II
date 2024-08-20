@@ -4,10 +4,17 @@ const header = document.querySelector("header")
 
 const dialog = document.querySelector(".modal__screen-wrapper")
 const dialogContent = document.querySelector(".diagram__content")
+const dialogImage = document.querySelector(".diagram__content img")
+
+const dialogZoomInput = document.querySelector(".diagram__content__controls__zoom-input")
 
 
 const diagramImagesContainer = document.querySelectorAll(".main__diagram__img-container")
 
+// dialogZoomInput.addEventListener("change", (e) => {
+//   console.log("range input: ", e.target.value)
+//   dialogImage.style.scale = `${parseFloat(e.target.value) / 20}`
+// })
 
 console.log(diagramImagesContainer[0])
 console.log(dialog)
